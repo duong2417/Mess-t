@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{char a[100];
+char* p;
+cout<<"nhap di: \n ";
+cin.getline(a,100);
+p=a;
+while (strstr(p," ") != NULL)
+{p = strstr(p, " ") + 1;
+p[0]= toupper(p[0]);}
+a[0]=toupper(a[0]);
+cout <<a;
+cout<<p;
+}
